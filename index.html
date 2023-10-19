@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Naufal Dzaky</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: rgb(0, 0, 0);
+    }
+
+    canvas {
+      border: 2px solid;
+      border-image: linear-gradient(to bottom, red, rgb(38, 0, 255));
+      border-image-slice: 1;
+      box-shadow: 0 0 30px rgba(247, 1, 194, 0.8); /* Efek menyalar */
+    }
+
+    #score, #lives {
+      position: absolute;
+      font-size: 40px;
+      text-shadow: 0 0 30px rgba(64, 133, 217, 0.8); /* Efek menyala */
+    }
+
+    #score {
+      top: 240px;
+      left: 40px;
+    }
+
+    #lives {
+      top: 350px;
+      left: 40px;
+    }
+
+    #name {
+      position: absolute;
+      font-size: 50px;
+      color: red; /* Warna teks merah */
+      text-shadow: 0 0 30px rgba(255, 0, 0, 0.8); /* Efek menyala*/
+      bottom: 20px;
+      left: 1568px;
+      transform: translateX(-50%);
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="canvasNaufal" width="1024" height="764"></canvas>
+<div id="foto"></div>
+<div id="score">Score: 0</div>
+<div id="lives">Lives: 0</div>
+<div id="name">Naufal Dzaky</div>
+
+<audio id="suaraTembak" preload="auto">
+  <source src="sfx/dor.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="suaraBum" preload="auto">
+  <source src="sfx/elim.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="wk" preload="auto">
+  <source src="sfx/nub.mp3" type="audio/mpeg">
+</audio>
+<audio id="poinUp" preload="auto">
+  <source src="sfx/skor.mp3" type="audio/mpeg">
+</audio>
+
+<script src="javascript_game_tugas_akhir.js"></script>
+</body>
+</html>
